@@ -34,10 +34,13 @@ public:
         }
         catch(float m)
         {
-            cout<<"Invalid Values for Playing time or Pricing.\n";
-            name="";
-            minutes=0.00;
-            price=0.00;
+            if(m==0.00)
+            {
+                cout<<"Invalid Values for Playing time or Pricing.\n";
+                name="";
+                minutes=0.00;
+                price=0.00;
+            }
         }
     };
 };
@@ -61,10 +64,13 @@ public:
         }
         catch(int n)
         {
-            cout<<"Invalid Values for Page count or Pricing.\n";
-            name="";
-            pages=0;
-            price=0.00;
+            if(n==1)
+            {
+                    cout<<"Invalid Values for Page count or Pricing.\n";
+                    name="";
+                    pages=0;
+                    price=0.00;
+            }
         }
     };
 };
